@@ -1,0 +1,1 @@
+ Overwritten Content since the file already exists.  This is Appended Data with the help of appendFileSync .
