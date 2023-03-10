@@ -39,8 +39,6 @@ const server = http.createServer((req, res) => {
         res.write("<h1>Error 404 ! Page Not Found </h1>");
         res.end();
     }
-
-
 })
 
 server.listen(3000, "127.0.0.1", () => {
