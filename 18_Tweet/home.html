@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+    <title>Quotes</title>
+</head>
+
+<body>
+
+    <div class="quotes"></div>
+    <div id="authors"></div>
+    <button id="newQ">
+        New Quotes
+    </button>
+
+    <button id="tweetMe">Tweet</button>
+
+    <div class="container">
+        <div class="inner">
+            <div class="box">
+                <p class="number">
+                    <img src="twitter.png" alt="Tweet" title="TweetMe" id="tweetMe" />
+                </p>
+
+                <div class="text">
+                    <i class="start-quote fas fa-quote-left"></i>
+                    <p class="quotes" id="quotes"></p>
+                    <p class="author" id="authors"></p>
+                </div>
+
+                <label class="button">
+                    <p id="newQ"> New Quotes </p>
+                </label>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+
+</body>
+
+</html>
