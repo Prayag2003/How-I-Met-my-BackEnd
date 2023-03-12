@@ -1,7 +1,10 @@
+// initializing the Animate On Scroll
+AOS.init();
+
 const api = "https://type.fit/api/quotes";
 
 const quotes = document.getElementById("quotes");
-const authors = document.getElementById("authors");
+const authors = document.getElementById("author");
 const newQ = document.getElementById("newQ");
 const tweetMe = document.getElementById("tweetMe");
 let realData = "";
