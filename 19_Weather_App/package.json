@@ -1,0 +1,15 @@
+{
+  "name": "19_weather_app",
+  "version": "1.0.0",
+  "description": "Creating Weather App with NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Prayag Bhatt",
+  "license": "ISC",
+  "dependencies": {
+    "requests": "^0.3.0"
+  }
+}
