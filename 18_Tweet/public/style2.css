@@ -1,0 +1,145 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Quicksand', sans-serif;
+    background-color: #F8F8F8;
+  }
+  
+  /* Container Styles */
+  .container {
+    max-width: 500px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Inner Styles */
+  .inner {
+    text-align: center;
+  }
+  
+  /* Box Styles */
+  .box {
+    position: relative;
+    margin-top: 40px;
+  }
+  
+  /* Number Styles */
+  .number {
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 24px;
+    color: #aaa;
+  }
+  
+  /* Quote Styles */
+  .quote {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #333;
+  }
+  
+  /* Author Styles */
+  .author {
+    margin-top: 20px;
+    font-size: 18px;
+    font-style: italic;
+    color: #777;
+  }
+  
+  /* Button Styles */
+  .button {
+    display: inline-block;
+    margin-top: 30px;
+    background-color: #0066FF;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #0044CC;
+  }
+  
+  #newQ {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+  
+  /* TweetMe Styles */
+  #tweetMe {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  #tweetMe:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Start Quote Styles */
+  .start-quote {
+    position: absolute;
+    top: -10px;
+    left: -30px;
+    font-size: 60px;
+    color: #0066FF;
+  }
+  
+  /* Media Queries */
+  @media only screen and (max-width: 768px) {
+    .quote {
+      font-size: 28px;
+    }
+    
+    .author {
+      font-size: 16px;
+    }
+    
+    .button {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media only screen and (max-width: 480px) {
+    .number {
+      font-size: 18px;
+    }
+    
+    .quote {
+      font-size: 24px;
+    }
+    
+    .author {
+      font-size: 14px;
+    }
+    
+    .button {
+      padding: 6px 12px;
+    }
+    
+    #tweetMe {
+      width: 25px;
+      height: 25px;
+    }
+    
+    .start-quote {
+      font-size: 40px;
+    }
+  }
+  
