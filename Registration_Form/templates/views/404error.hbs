@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       {{>headerlinks}}
+</head>
+<body>
+    {{>navbar}}
+  <!-- MAIN HEADER -->
+    <div class="container-fluid main_header">
+        <div class="row">
+            <!-- LEFT SIDE DIV -->
+            <div class="col-md-10 col-12 mx-auto">
+                <div class="row">
+                    <div class="col-md-12 col-12 main_header_left align-items-center">
+                        <figure>
+                            <img src="img/404.jpg" alt="image" class="image-fluid err" title="aps">
+                        </figure>
+
+                        <p>Welcome to My Weather App</p>
+                        <h1>{{errormsg}}</h1>
+                        <a href="/"><button>Go Back</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{>footer}}
+</body>
+</html>

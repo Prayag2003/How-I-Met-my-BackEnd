@@ -1,0 +1,46 @@
+{{>headerlinks}}
+
+<body style=" background-image: linear-gradient(to bottom right, rgb(0, 255, 217), rgb(220, 215, 125));;">
+    {{>navbar}}
+    <section class="vh-50">
+        <div class="container py-5 h-50">
+            <div class="row d-flex align-items-center justify-content-center h-100">
+                <div class="col-md-8 col-lg-7 col-xl-6">
+                    <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.svg"
+                        class="img-fluid" alt="Phone image">
+                </div>
+                <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
+                    <form action="/login" method="post">
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <h1 class="mb-4 pb-2 pb-md-0 mb-md-5 " style="text-align:center">Sign in</h1>
+                            <label class="form-label" for="name">Email address</label>
+                            <input type="email" id="name" class="form-control form-control-lg" name="email" />
+                        </div>
+
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                            <label class="form-label" for="password">Password</label>
+                            <input type="password" id="password" class="form-control form-control-lg" name="pass" />
+                        </div>
+
+                        <div class="d-flex justify-content-around align-items-center mb-4">
+                            <a href="/register">Create Account?</a>
+                        </div>
+
+                        <div class="reg">
+                            <!-- Submit button -->
+                            <button type="submit" class="Sign btn btn-primary btn-lg " style="font-size: larger;"
+                                name="save">Sign in</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+{{>footer}}
+
+</html>
