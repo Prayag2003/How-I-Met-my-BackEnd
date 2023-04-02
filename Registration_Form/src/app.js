@@ -7,6 +7,7 @@ const hbs = require("hbs");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
 const cookieParser = require("cookie-parser");
+const auth = require("../src/middleware/auth");
 
 const port = process.env.PORT || 3000;
 require("./db/connection")
@@ -30,17 +31,37 @@ app.set("views", templatePath);
 hbs.registerPartials(partialPath);
 
 // Rendering the HBS File as default Page
-app.get("/", (req, res) => {
+app.get("/", auth, (req, res) => {
     res.render("index");
 })
 
-app.get("/secret", (req, res) => {
+// Authentification Middlewares
+app.get("/secret", auth, (req, res) => {
 
     console.log(`My Cookie Token :- ${req.cookies.jwt}`);
     res.render("secret");
 })
 
-app.get("/register", (req, res) => {
+
+app.get("/logout", auth, async (req, res) => {
+    try {
+        // Clearing the cookie 
+        res.clearCookie("jwt");
+        // console.log(req.user);
+        req.user.tokens = req.user.tokens.filter((elem) => {
+            return elem.token !== req.token;
+        })
+        console.log("Logout Successful ");
+
+        await req.user.save();
+        res.render("login");
+    }
+    catch (e) {
+        res.status(500).send(e);
+    }
+})
+
+app.get("/register", auth, (req, res) => {
     res.render("register");
 })
 
